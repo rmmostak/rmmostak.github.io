@@ -164,7 +164,7 @@
 @media only screen and (max-width : 480px) {
 	.logo{
 		font-size: 52px;
-		line-height: 54px;
+		margin: 10px auto;
 	}
 	.slogan{
 		font-size: 20px;
@@ -193,7 +193,7 @@
 		line-height: 44px;
 	}
 	.slogan{
-		font-size: 16px;
+		font-size: 20px !important;
 		line-height: 18px;
 	}
 	.box_contact {

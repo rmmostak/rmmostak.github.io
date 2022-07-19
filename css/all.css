@@ -1,43 +1,3 @@
-@font-face {
-    font-family: 'novecentosanswide';
-    src: url('../fonts/novecentosanswide-normal-webfont.eot');
-    src: url('../fonts/novecentosanswide-normal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/novecentosanswide-normal-webfont.woff') format('woff'),
-         url('../fonts/novecentosanswide-normal-webfont.ttf') format('truetype'),
-         url('../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'novecentosanswide';
-    src: url('../fonts/novecentosanswide-bold-webfont.eot');
-    src: url('../fonts/novecentosanswide-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/novecentosanswide-bold-webfont.woff') format('woff'),
-         url('../fonts/novecentosanswide-bold-webfont.ttf') format('truetype'),
-         url('../fonts/novecentosanswide-bold-webfont.svg#novecentosanswidebold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'novecento_sans_widebook';
-    src: url('../fonts/novecentosanswide-book-webfont.eot');
-    src: url('../fonts/novecentosanswide-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/novecentosanswide-book-webfont.woff') format('woff'),
-         url('../fonts/novecentosanswide-book-webfont.ttf') format('truetype'),
-         url('../fonts/novecentosanswide-book-webfont.svg#novecento_sans_widebook') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'novecento_sans_widemedium';
-    src: url('../fonts/novecentosanswide-medium-webfont.eot');
-    src: url('../fonts/novecentosanswide-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/novecentosanswide-medium-webfont.woff') format('woff'),
-         url('../fonts/novecentosanswide-medium-webfont.ttf') format('truetype'),
-         url('../fonts/novecentosanswide-medium-webfont.svg#novecento_sans_widemedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,6 +16,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Marmelad', sans-serif;
 }
 
 article, aside, details, figcaption, figure, 
@@ -135,13 +96,13 @@ a:hover{text-decoration:underline;}
 .wrapper-holder {
 	width:100%;
     display:table-row;
-    background: #50af6f;
+    background: #004216;
 }
-.wrapper-holder.grey{background: #28292b;}
+.wrapper-holder.grey{background: #169340;}
 #header {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 69px 0 50px;
+	padding: 70px 0 70px;
 	position:relative;
 }
 .menu_trigger{
@@ -155,15 +116,15 @@ a:hover{text-decoration:underline;}
 	position: absolute;
 }
 .logo {
-	text-align:center;
-	font-family: 'novecentosanswide';
+	text-align: right;
+	font-family: 'Marmelad', sans-serif;
 	font-weight:bold;
 	color: #fff;
-	font-size: 72px;
+	font-size: 60px;
 	line-height: 74px;
 	display: block;
-	text-transform: uppercase;
-	margin: 85px 0 23px;
+	/* text-transform: none; */
+	margin-bottom: 15px;
 }
 #nav {
 	position: relative;
@@ -183,10 +144,10 @@ a:hover{text-decoration:underline;}
 	color: #aeecc2;
 	font-size: 18px;
 	line-height: 20px;
-	text-transform: uppercase;
+	/* text-transform: none; */
 	padding: 0 0 10px;
 	border-bottom: 4px solid #62bb7f;
-	font-family: 'novecentosanswide';
+	font-family: 'Marmelad', sans-serif;
 	font-weight: normal;
 }
 #nav ul a:hover,#nav ul a.active{
@@ -198,41 +159,73 @@ a:hover{text-decoration:underline;}
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;
 }
+
 h2.slogan{
 	display: block;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'novecento_sans_widebook';
+	text-align: right;
+	font-family: 'Marmelad', sans-serif;
 	font-size: 30px;
 	line-height: 32px;
-	color: #aeecc2;
-	padding: 34px 0 50px 0;
-	background: url(../images/slogan_bg.gif) no-repeat 50% 0;
+	color: #00fd50;
+	padding: 0 0 20px 0;
+}
+.left-border {
+	height: max-content;
+	border-left: 10px solid darkgray;
+	border-right: 10px solid darkgray;
+	text-align: justify;
+	text-justify: auto;
+	background-color: #f2f2f213;
+	color: white;
+	margin-top: 10px;
+	line-height: 25px;
+	padding: 15px;
+	box-shadow: -1px 1px 5px #f2f2f2;
+}
+.flex {
+	display: flex;
+	padding: 80px 0;
+}
+.naming {
+	width: 50%;
+	padding-right: 5%;
+	text-align: right;
+}
+.linkPlug {
+    width: 50%;
+    align-items: self-end;
+    position: relative;
+}
+.badge-base {
+    position: absolute;
+    bottom: 0;
 }
 /*main
  */
-#main{
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 93px 0 76px;
-	position:relative;
-	background: url(../images/icon_header.png) no-repeat 50% 0;
+ #main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 70px 0 70px;
+    position: relative;
 }
 #main h2{
 	display: block;
 	text-align: center;
-	text-transform: uppercase;
-	font-family: 'novecento_sans_widebook';
+	font-family: 'Marmelad', sans-serif;
 	font-size: 30px;
 	line-height: 32px;
 	color: #fff;
-	margin: 0 0 81px;
+	margin: 0 0 40px;
 }
 .box_timeline_holder{
 	background: url(../images/bg_timeline_l.png) no-repeat 0 70px;
 	position: relative;
 	padding: 0 0 0 100px;
 	overflow: hidden;
+}
+.subHead{
+	margin-top: 5px;
+	font-size: 14px;;
 }
 .box_timeline{
 	background: url(../images/bg_timeline_r.png) no-repeat 100% 70px;
@@ -247,8 +240,8 @@ h2.slogan{
 }
 .box_timeline ul li{
 	float:left;
-	width: 170px;
-	margin: 0 0 0 30px;
+	width: 21%;
+	margin: 0 0 0 4%;
 	background: url(../images/bg_ul.gif) repeat-x 0 76px;
 }
 .box_timeline ul li:first-child{margin: 0;}
@@ -260,9 +253,8 @@ h2.slogan{
 	overflow: hidden;
 }
 .box_timeline ul li .date span{
-	font-family: 'novecentosanswide';
 	font-weight:bold;
-	color: #fff;
+	color: white;
 	font-size: 14px;
 	line-height: 16px;
 	display: block;
@@ -270,17 +262,17 @@ h2.slogan{
 	padding: 15px 0 0 0;
 }
 .box_timeline h3{
-	font-family: 'novecento_sans_widemedium';
-	color: #50af6f;
-	font-size: 14px;
-	line-height: 16px;
+	font-family: 'Marmelad', sans-serif;
+	color: white;
+	font-size: 20px;
+	line-height: 22px;
 	display: block;
 	text-align: center;
 	margin: 0 0 10px;
 }
 .box_timeline p{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #a4a7ac;
+	font-family: inherit;
+	color: rgb(255 255 255 / 72%);
 	font-size: 16px;
 	line-height: 18px;
 	display: block;
@@ -320,9 +312,9 @@ h2.slogan{
 .progress li span{
 	background: #50af6f;
 	color: #fff;
-	text-transform:uppercase;
+	
 	display: block;
-	font-family: 'novecentosanswide';
+	font-family: 'Marmelad', sans-serif;
 	font-weight: normal;
 	font-size: 18px;
 	padding: 0 0 0 20px;
@@ -388,10 +380,10 @@ h2.slogan{
 	color: #a4a7ac;
 	font-size: 14px;
 	line-height: 16px;
-	text-transform: uppercase;
+	text-transform: none;
 	padding: 0 0 10px;
 	border-bottom: 4px solid #3b3c3e;
-	font-family: 'novecentosanswide';
+	font-family: 'Marmelad', sans-serif;
 	font-weight: normal;
 }
 .sub_nav a:hover,.sub_nav a.active{
@@ -408,11 +400,11 @@ transition: all 0.5s ease-in-out;
 	color: #a4a7ac;
 	font-size: 14px;
 	line-height: 16px;
-	text-transform: uppercase;
+	text-transform: none;
 	margin: 0 22px;
 	padding: 0 0 10px;
 	border-bottom: 4px solid #3b3c3e;
-	font-family: 'novecentosanswide';
+	font-family: 'Marmelad', sans-serif;
 	font-weight: normal;
 }
 .sub_nav li:hover,.sub_nav .active {
@@ -478,8 +470,8 @@ transition: all 0.5s ease-in-out;
 	display: block;
 	background: url(../images/bg_white_border.gif) no-repeat 50% 100%;
 	color: #fff;
-	text-transform: uppercase;
-	font-family: 'novecentosanswide';
+	text-transform: none;
+	font-family: 'Marmelad', sans-serif;
 	font-weight:bold;
 	font-size: 14px;
 	line-height: 16px;
@@ -510,15 +502,30 @@ transition: all 0.5s ease-in-out;
 	overflow:hidden;
 	margin: 54px 0 0 0;
 }
+.box_contact span a {
+	color: white;
+}
 .box_contact span{
 	color: #fff;
-	font-family: 'novecento_sans_widebook';
+	font-family: 'Marmelad', sans-serif;
 	font-size: 30px;
 	line-height: 32px;
-	text-transform: uppercase;
+	text-transform: none;
 	display: block;
-	margin: 0 0 55px;
+	margin: 0 0 20px;
 	padding: 5px 0 18px 80px;
+}
+.circle {
+    background-image: url(../images/android.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+	background-color: #004216;
+    box-shadow: 2px 1px 3px darkgreen;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: -50px auto;
 }
 .box_contact span.email{background: url(../images/icon_email2.png) no-repeat;}
 .box_contact span.phone{background: url(../images/icon_phone.png) no-repeat;}
@@ -532,15 +539,15 @@ transition: all 0.5s ease-in-out;
     background:#fff;
 }
 .footer-content {
-	max-width: 1170px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 45px 0 20px;
 	color: #a5a5a5;
 }
 .footer-content .social{
-	overflow:hidden;
-	margin: 0 auto 45px;
-	width: 670px;
+	overflow: hidden;
+	margin: 0 auto 45px auto;
+	width: max-content;
 }
 .footer-content .social li{
 	float:left;
@@ -549,8 +556,8 @@ transition: all 0.5s ease-in-out;
 	behavior: url(css/PIE.htc);
 	text-indent: -9999px;
 	background: #c6cfc9;
-	width: 123px;
-	height: 123px;
+	width: 80px;
+	height: 80px;
 	position:relative;
 	display: table;
 }
@@ -572,10 +579,15 @@ transition: all 0.5s ease-in-out;
 .footer-content .social li.twitter a{background: url(../images/icon_tw.png) no-repeat 50% 50% ;}
 .footer-content .social li.pinterest a{background: url(../images/icon_pn.png) no-repeat 50% 50%;}
 .footer-content p{
-	font:18px/20px Arial, Helvetica, sans-serif;
+	font:18px/20px;
 	display: block;
+	font-family: 'Marmelad', sans-serif;
 	text-align: center;
 	color: #929c95;
+}
+.copy {
+	padding-top: 10px;
+	border-top: 2px solid #f2f2f2;
 }
 /* begin add	 */
 .popup_portfolio{
@@ -583,19 +595,19 @@ transition: all 0.5s ease-in-out;
 }
 .popup_portfolio h3{
 	padding-top:26px;
-	font-family: 'novecentosanswide';
+	font-family: 'Marmelad', sans-serif;
 	font-weight:bold;
 	color: #63666a;
 	font-size: 18px;
 	line-height: 18px;
-	text-transform: uppercase;
+	text-transform: none;
 }
 .popup_portfolio time{
-	font-family: 'novecentosanswide';
+	font-family: 'Marmelad', sans-serif;
 	color: #abacaf;
 	font-size: 12px;
 	line-height: 12px;
-	text-transform: uppercase;
+	text-transform: none;
 }
 .popup_portfolio p{
 	padding: 17px 0 8px;
@@ -634,8 +646,8 @@ transition: all 0.5s ease-in-out;
 		background-size:31px 30px;
 	}
 	.slogan{
-		background-image: url(../images/slogan_bg@x2.gif);
-		background-size:80px 4px;
+		/* background-image: url(../images/slogan_bg@x2.gif);
+		background-size:80px 4px; */
 	}
 	.box_timeline_holder{
 		background-image: url(../images/bg_timeline_l@x2.png);
