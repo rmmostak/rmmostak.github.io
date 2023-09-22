@@ -319,14 +319,19 @@ h2.slogan{
 	font-size: 18px;
 	padding: 0 0 0 20px;
 }
-.progress li span.photoshop{width: 100%;}
-.progress li span.illustrator{width: 70%;}
-.progress li span.indesign{width: 40%;}
-.progress li span.flash{width: 80%;}
-.progress li span.html{width: 75%;}
-.progress li span.wordpress{width: 85%;}
-.progress li span.jquery{width: 70%;}
-.progress li span.seo{width: 40%;}
+.progress li span.java{width: 75%;}
+.progress li span.flutter{width: 68%;}
+.progress li span.dart{width: 70%;}
+.progress li span.app-dev{width: 80%;}
+.progress li span.api{width: 75%;}
+.progress li span.firebase{width: 85%;}
+.progress li span.sql{width: 70%;}
+.progress li span.sqlite{width: 71%;}
+.progress li span.ojs{width: 90%;}
+.progress li span.php{width: 68%;}
+.progress li span.laravel{width: 70%;}
+.progress li span.git{width: 70%;}
+
 .plagin_list{
 	width: 100%;
 	overflow: hidden;
